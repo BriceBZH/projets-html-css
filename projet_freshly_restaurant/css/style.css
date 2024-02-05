@@ -1,0 +1,326 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    font-family: 'Athiti', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 3rem;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Merienda', cursive;
+    font-size: 2.5rem;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+h3 {
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+h1::before, h2::before, h3::before {
+	font-size: 1rem;
+	font-family: 'FontAwesome';
+	color: #950000;
+	content:"\f005";
+	padding:1em;
+}
+h1::after, h2::after, h3::after {
+	font-size: 1rem;
+	font-family: 'FontAwesome';
+	color: #950000;
+	content:"\f005";
+	padding:1em;
+}
+a {
+    text-decoration: none;
+}
+menu {
+    padding: 0;
+}
+img {
+    max-width:100%;
+}
+section, .slider {
+    padding:1em;
+}
+/******************* Header *************************/
+.header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(235,227,219);
+    background: linear-gradient(180deg, rgba(235,227,219,1) 35%, rgba(255,255,255,1) 100%);
+}
+.header a {
+    text-align: center;
+}
+nav menu {
+    list-style: none;
+}
+.logo {
+    width:25%;
+    padding-top: 2em;
+}
+nav menu li {
+    background-color: #ebe3db;
+    border-bottom: 1px solid #4c4343;
+    padding: 0.5em;
+    font-weight: bold;
+    text-align: center;
+}
+nav menu li a {
+    color: #000;
+    transition: all 3s ;
+    display: block;
+}
+nav menu li a:hover { /************************************************************************************/
+    background-color: #950000;
+    color: white;
+}
+.selected {
+    background-color: #4c4343;
+}
+.selected a {
+    color: #fff;
+}
+/******************* Main *************************/
+figure {
+    margin: 0;
+    padding: 0;
+}
+.prix_menu {
+    font-size: 5rem;
+}
+.text_menu {
+    font-size: 1.5rem;
+}
+.menu {
+    background-color: #ebe3db;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu ul {
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+.menu ul li::before {
+    content: "\f005";
+    font-size: 1rem;
+	font-family: 'FontAwesome';
+	color: #950000;
+	padding:1em;
+}
+.menu ul li {
+    border-bottom: 1px dashed black;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 1.5em;
+}
+.more {
+    background-color: #4c4343;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    box-shadow: 2px 2px 2px silver;
+    transition: background-color 3s;
+}
+.more img {
+    max-width: 1em;
+    padding: 0.5em;
+}
+.more:hover {
+    background-color: #950000;
+}
+/* *****************************************************************
+ TRANSFORM
+***************************************************************** */
+.img_menu {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.img_menu a {
+	display: block;
+	text-decoration: none;
+	color: #DD5735;
+ }
+.img_menu img {
+	transition: all .5s;
+}
+.img_menu:hover img {
+	opacity: 0.5;
+}
+.img_menu figcaption {
+    padding: 2em;
+	bottom: 5em;
+	width: 30%;
+	left:9em;
+	position: absolute;
+    right: 0;
+    opacity: 0;
+	transition: all .5s;
+}
+.img_menu:hover figcaption {
+	opacity: 1;
+	transform: scale(2);
+	border: 3px solid white;
+}
+/****************************** MAIN PAGE MENUS ***********************/
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #ebe3db;
+    justify-content: space-evenly;
+}
+.section_menus article {
+    text-align:center;
+}
+.controls ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.controls ul li {
+    background-color: #ebe3db;
+    padding: 0.5em;
+    font-weight: bold;
+}
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.block img {
+    padding: 0.5em;
+    width: 47%;
+}
+.result_menus div {
+    width: 47%;
+}
+.result_menus div img {
+    width: 100%;
+}
+/******************* Footer *************************/
+.titre_footer {
+    font-size: 1.8rem;
+    padding-bottom: 0.2em;
+    border-bottom: 1px dashed white;
+    font-family: 'Merienda', cursive;
+}
+.button_tri, .valid_form {
+    font-size: 1.6rem;
+}
+.footer, .license {
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+	font-size: 1.6rem;
+}
+.footer ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.footer a, .license a {
+    color: white;
+    text-decoration:underline;
+}
+.license {
+    padding: 1em;
+    padding-right:2em;
+    padding-left:2em;
+}
+.col {
+    width: 100%;
+}
+
+
+
+/* *****************************************************************
+TABLETTE
+***************************************************************** */
+
+@media screen and (min-width: 780px) {
+    nav menu {
+        background-color: #ebe3db;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav menu li {
+        border: 0;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .col {
+        width:30%;
+    }
+    /****************************** MAIN PAGE MENUS ***********************/
+    .result_menus div {
+        width: 32%;
+    }
+    .block img {
+        width: 30%;
+    }
+}
+
+/* *****************************************************************
+DESKTOP
+***************************************************************** */
+
+@media screen and (min-width: 1100px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .menus {
+        display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+    }
+    .menu {
+        width: 32%;
+    }
+    section h2 {
+		flex: 1 0 100%;
+	}
+	figure {
+	    display: flex;
+	    flex-direction: row-reverse;
+	}
+	figure img {
+	    padding: 1em;
+	}
+}

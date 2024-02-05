@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Merienda&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <meta charset="utf-8">
+		<title>Freshly restaurant</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img alt="logo" class="logo" src="img/logo.png" /></a>
+            <h1>Freshly Restaurant</h1>
+            <nav>
+                <menu>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="selected"><a href="menus.html">Menus</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </menu>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="section_menus">
+                <article>
+                    <h2>Détails of our menus</h2>
+                    <p>Choose your main course according to your menu !</p>
+                    <div class="controls">
+                        <ul>
+                            <li class="selected" data-filter="all">ALL</li>
+                            <li data-toggle=".meat">MEAT</li>
+                            <li data-toggle=".vegan">VEGAN</li>
+                            <li data-toggle=".fish">FISH</li>
+                        </ul>
+                    </div>
+                    <div class="result_menus block">
+                        <div class="meat"><img src="img/menus/meat-01.jpg" alt="Freshly burger" /></div>
+                        <div class="meat"><img src="img/menus/meat-02.jpg" alt="Beef stew with pasta" /></div>
+                        <div class="meat"><img src="img/menus/meat-03.jpg" alt="Freshly kebabs" /></div>
+                        <div class="mix vegan"><img src="img/menus/vegan-01.jpg" alt="Vegetable Jambalaya" /></div>
+                        <div class="mix vegan"><img src="img/menus/vegan-02.jpg" alt="Grilled eggplants" /></div>
+                        <div class="mix vegan"><img src="img/menus/vegan-03.jpg" alt="Mixed vegetables" /></div>
+                        <div class="mix fish"><img src="img/menus/fish-01.jpg" alt="Grilled mussels" /></div>
+                        <div class="mix fish"><img src="img/menus/fish-02.jpg" alt="Cajun shrimp" /></div>
+                        <div class="mix fish"><img src="img/menus/fish-03.jpg" alt="Grilled salmon" /></div>
+                    </div>
+                </article>
+                <article>
+                    <h2>Déserts</h2>
+                    <p>Here are the deserts you can choose to finish your meal (included in your menu).</p>
+                    <div class="block">
+                        <img src="img/menus/desert-01.jpg" alt="Tiramisu" />
+                        <img src="img/menus/desert-02.jpg" alt="Freshly Pancakes" />
+                        <img src="img/menus/desert-03.jpg" alt="Redberries cup" />
+                    </div>
+                </article>
+                <article>
+                    <h2>Cocktails</h2>
+                    <p>Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not included in the menu).</p>
+                    <div class="block">
+                        <img src="img/menus/drink-01.jpg" alt="Winter Whiskey" />
+                        <img src="img/menus/drink-02.jpg" alt="Paloma cocktail" />
+                        <img src="img/menus/drink-03.jpg" alt="Bellini cocktail" />
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+                <div class="col">
+                    <p class="titre_footer">Opening hours</p>
+                    <ul>
+                        <li>Monday: Closed</li>
+                        <li>Tue-Wed : 9am - 10pm</li>
+                        <li>Thu-Fri : 9am - 10pm</li>
+                        <li>Sat-Sun : 5pm - 10pm</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p class="titre_footer">Contact</p>
+                    <address>
+                        <ul>
+                            <li>13 Christopher Street</li>
+                            <li>New York,</li>
+                            <li>NY 10014-3543</li>
+                            <li>+01 2000 800 9999</li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col">
+                    <p class="titre_footer">Social networks</p>
+                    <p>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </p>
+                </div>
+        </footer>
+        <div class="license">
+            <p><a href="https://3wacademy.fr/"><img alt="logo 3W" src="img/logo-3wa.png" /></a></a></p>
+            <p>Cet exercice de <a href="https://3wacademy.fr/">3W Academy</a> est mis à disposition <a href="https://3wa.fr/propriete-materiel-pedagogique/">pour l'usage personnel des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International</a>.</p>
+            <p>Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="">Catherine Denos</a>.</p>
+        </div>
+        <script src="js/mixitup.min.js"></script>
+        <script>
+            var containerEl = document.querySelector('.result_menus');
+
+            var mixer = mixitup(containerEl);
+        </script>
+    </body>
+</html>
